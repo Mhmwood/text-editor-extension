@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Text Editor Extension",
+  "version": "1.0",
+  "description": "A sleek Chrome extension that lets you edit, style, and customize text directly on any webpage",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_icon": {
+      "16": "icons/logo/logo16.png",
+      "48": "icons/logo/logo48.png",
+      "128": "icons/logo/logo128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "16": "icons/logo/logo16.png",
+    "48": "icons/logo/logo48.png",
+    "128": "icons/logo/logo128.png"
+  }
+}
